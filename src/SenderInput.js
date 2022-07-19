@@ -1,6 +1,6 @@
-// import { useEffect, useState } from "react"
+import {  useState } from "react"
 
-// function SenderInput(){
+function SenderInput(){
 //     const time = 20;
 //     const [count, setCount] = useState(time);
 //     const [isStart, setIsStart] = useState(false);
@@ -43,21 +43,22 @@
     //         })
     //     }[isStart]
     // })
-    // const[Value,setValue]=useState()
-    // const[Display,setDisplay]=useState(false)
-    // const DeleteClick=()=>{
-    //     setDisplay(!Display)
-    // }
-    // const onChange=(event)=>{
-    //    setValue(event.target.value) 
-    // }
-// return(
-//     <div>
-//         <div>{Display && Value}</div>
-//         <input onChange={onChange}/>
-//         <button type="button" className="btn" onClick={DeleteClick}>Submit</button>
-//     </div>
-// )
+    const[Value,setValue]=useState()
+    const[Display,setDisplay]=useState(false)
+    const DeleteClick=()=>{
+        setDisplay(!Display)
+    }
+    const onChange=(event)=>{
+       setValue(event.target.value) 
+    }
+return(
+    <div>
+        <div>{Display && Value}</div>
+        <input onChange={onChange}/>
+        <button type="button" className="btn" onClick={DeleteClick}>Submit</button>
+    </div>
+)
+}
 // return(
 // <div>
 // <div>{count}</div>
@@ -65,4 +66,4 @@
 // <button>Pauze</button>
 // </div>
 // // )
-// export default SenderInput
+export default SenderInput
